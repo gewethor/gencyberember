@@ -20,7 +20,11 @@ export default Ember.Component.extend({
 			Ember.$.post('../api/session/', data, function(response){
 				if(response.isauthenticated){
 					//success
+<<<<<<< HEAD
 					console.log('Login POST Request to ../api/session/ was successful.'); 
+=======
+					console.log('Login POST Request to ../api/session/ was successful.');
+>>>>>>> cc3f1b9c569c4d4c44504ca7b8b07d7646967f0a
 					controllerObj.set('username', response.username);
 					controllerObj.set('userid', response.userid);
 					controllerObj.set('isLoggedIn', true);
@@ -40,10 +44,17 @@ export default Ember.Component.extend({
 				} else{
 					//errors
 					console.log('Login POST Request to ../api/session/ was unsuccessful.');
+<<<<<<< HEAD
 					controllerObj.set('errorMsg', response.message); 
 					}
 			});
 
+=======
+					controllerObj.set('errorMsg', response.message);
+				}
+			});
+			
+>>>>>>> cc3f1b9c569c4d4c44504ca7b8b07d7646967f0a
 		},
 		logout: function(){
 			var controllerObj = this;
@@ -87,4 +98,7 @@ export default Ember.Component.extend({
 		}
 	}
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> cc3f1b9c569c4d4c44504ca7b8b07d7646967f0a

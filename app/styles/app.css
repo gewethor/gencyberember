@@ -44,6 +44,7 @@ body { padding-top: 70px; }
 
 .auth-mgr {
 	float: right;
+<<<<<<< HEAD
 } 
  
 .left-menu { 
@@ -53,3 +54,14 @@ body { padding-top: 70px; }
 .profile-feed-img { 
  	min-width: 100%; 
  }
+=======
+}
+
+.left-menu {
+	margin-top: -8px;
+}
+
+.profile-feed-img {
+	min-width: 100%;
+}
+>>>>>>> cc3f1b9c569c4d4c44504ca7b8b07d7646967f0a
